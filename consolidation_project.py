@@ -49,7 +49,7 @@ def individual_turn(high_score):
     while True:
         # role the dice
         die1, die2, die3 = roll_dice()
-        # tell the player what they rolled for each dice
+        # tell the player what was rolled for each dice
         print(f"You rolled: Dice 1: {die1}, Dice 2: {die2}, Dice 3: {die3}")
         # if the player "tuples out"
         if tuple_out([die1, die2, die3]):
@@ -109,6 +109,7 @@ def game():
         if another_turn != 'y':
             break
     print(f"Game over! Your final high score is: {high_score}")
+# run the game
 game()
 
 
